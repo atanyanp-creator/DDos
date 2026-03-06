@@ -309,9 +309,7 @@ def process_updates():
 
                         print(f"Callback: {data} from user {user_id}")
 
-                        if not is_admin(user_id):
-                            answer_callback(cb_id, "❌ Доступ запрещен")
-                            continue
+                        
 
                         # НОВАЯ АТАКА
                         if data == "new":
